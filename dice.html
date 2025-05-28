@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="dice.css">
+  <title>DICEE</title>
+</head>
+<body>
+  <div class="container">
+    <audio class="rollSound" src="dice-102631.mp3" preload="auto"></audio>
+    <h1>DICEE</h1>
+    <p class="winner"></p>
+
+    <div class="dice-grid"> 
+      <div>
+        <p class="player-name">Player 1</p>
+        <img src="images/dice6.png" alt="" class="img1">
+      </div>
+
+      <div>
+        <p class="player-name">Player 2</p>
+        <img src="images/dice6.png" alt="" class="img2">
+      </div>
+    </div>
+
+    <div>
+      <p class="result"></p>
+    </div>
+
+    <div class="buttons">
+      <button onclick="playGame()">PLAY</button>
+      <button onclick="resetGame()">Reset</button>
+    </div>
+
+    <footer>Shubbie_Dicee &copy; Let's Roll!</footer>
+  </div>
+  
+  <script src="dice.js"></script>
+</body>
+</html>

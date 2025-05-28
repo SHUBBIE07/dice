@@ -1,0 +1,147 @@
+body{
+  background-color: #393E46 ;
+}
+h1{
+  color: #F1E3D3;
+  font-size: 4rem;
+  font-family: 'Lobster', cursive;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.container{
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+}
+.dice-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+}
+.winner{
+  font-size: 2rem;
+  color: #F1E3D3;
+  font-family: 'Indie Flower', cursive;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.player-name{
+  margin-bottom: 30px;
+  font-size: 2em;
+  color: #F1E3D3;
+  font-family: cursive;
+  font-family: 'Indie Flower', cursive;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+img{
+  width: 200px;
+  height: 200px;
+  vertical-align: middle;
+}
+.result{
+  font-size: 2rem ;
+  color: #F1E3D3;
+  margin-top: 20px;
+  font-family: 'Indie Flower', cursive;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.buttons{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+}
+button{
+  padding: 10px 20px ;
+  font-size: 1.5rem;
+  background-color: #F1E3D3;
+  color: #6B705C;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease ;
+}
+button:hover{
+  background-color: #D9BF77 ;
+  color: #393E46;
+}
+footer {
+  margin-top: 80px;
+  text-align: center;
+  /* color: #6B705C; */
+  color: #F1E3D3;
+  font-size: 1.2rem;
+  font-family: 'Indie Flower', cursive;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes roll {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(90deg); }
+  50% { transform: rotate(180deg); }
+  75% { transform: rotate(270deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.roll {
+  animation: roll 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 860px) and (min-width: 601px) {
+  .container {
+    width: 70%;
+    text-align: center;
+  }
+
+  img {
+    width: 200px;
+    height: 200px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .winner,
+  .player-name,
+  .result {
+    font-size: 1.8rem;
+  }
+
+  button {
+    font-size: 1.3rem;
+  }
+
+  footer {
+    font-size: 1.1rem;
+    margin-top: 150px;
+   letter-spacing: 1px;
+
+  }
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 80%;
+    margin: 10px auto;
+    text-align: center;
+  }
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 50px ;
+  }
+  .winner, .player-name, .result{
+    font-size: 1.5rem;
+  }
+  img{
+    width: 100px;
+    height: 100px;
+  }
+  button {
+    font-size: 1.2rem;
+  }
+  footer{
+    font-size: 1rem;
+    margin-top: 300px;
+  }
+}
